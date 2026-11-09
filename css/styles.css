@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+h1 {
+	font-family: "Big Shoulders";
+	font-weight: 700px;
+	color: #ffffff;
+	font-size: 40px;
+}
+p {
+	font-family: "Lexend Deca";
+	font-weight: 400px;
+	font-size: 15px;
+	color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-wrapper {
+	margin: 5rem 1rem 5rem 1rem;
+}
+
+.card {
+	border: 1px solid transparent;
+	height: 500px;
+	line-height: 30px;
+}
+
+.card1 {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 10px 10px 0 0;
+	padding: 3rem;
+}
+
+.card2 {
+	background-color: hsl(184, 100%, 22%);
+	padding: 3rem;
+}
+
+.card3 {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 0 10px 10px;
+	padding: 3rem;
+}
+
+.button1 {
+	border: 5px solid white;
+	border-radius: 50px;
+	background-color: #ffffff;
+	color: hsl(31, 77%, 52%);
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	gap: 1rem;
+	font-size: 20px;
+}
+
+.button2 {
+	border: 5px solid white;
+	border-radius: 50px;
+	background-color: #ffffff;
+	color: hsl(184, 100%, 22%);
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	gap: 1rem;
+	font-size: 20px;
+}
+
+.button3 {
+	border: 5px solid white;
+	border-radius: 50px;
+	background-color: #ffffff;
+	color: hsl(179, 100%, 13%);
+	padding: 0.5rem 1rem;
+	text-decoration: none;
+	gap: 1rem;
+	font-size: 20px;
+}
+
+@media (min-width: 800px) {
+	.card-wrapper {
+		display: flex;
+		line-height: 35px;
+		height: 700px;
+		padding: 2rem;
+		width: 950px;
+		margin: 0 auto;
+		align-items: center;
+	}
+	.card {
+		height: 550px;
+	}
+	.card1 {
+		border-radius: 10px 0 0 10px;
+	}
+	.card3 {
+		border-radius: 0 10px 10px 0;
+	}
+}
